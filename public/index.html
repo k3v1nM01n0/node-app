@@ -8,8 +8,25 @@
   <body>
     <img src ="robot.jpg"
          alt="mr robot"
-         style =" height:200px;width:200px;"
+         style =" height:700px;width:700px;"
          >
     <p>A bug is never just a mistake. It represents something bigger. An error of thinking. That makes you who you are.</p>
-  </body>
+  
+
+    <script>
+      navigator.geolocation.getCurrentPosition(position =>{
+        console.log(position)
+        const lat = position.coords.latitude
+        const lon = position.coords.longitude
+        document.getElementById('latitude').textContent = lat;
+        document.getElementById('longitude').textContent = lon;
+      });
+
+    </script>
+    <p>
+      latitude: <span id="latitude"></span>&deg;<br />
+      longitude: <span id="longitude"></span>&deg;
+
+    </p>
+  </body>
 </html>
