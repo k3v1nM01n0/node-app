@@ -1,2 +1,3 @@
 # node-app
-Trying to learn node js
+basic node app
+
